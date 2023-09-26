@@ -10,7 +10,9 @@ class recetasController extends controller
     {
         switch ($accion) {
             case "ver":
-                $this->ver($_GET["id"]);
+                if(isset($_GET['id'])){
+                    $this->ver($_GET["id"]);
+                }
                 break;
             case "":
                 $this->cargar();

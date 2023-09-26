@@ -1,13 +1,11 @@
 <?php
-// Incluir la lógica para verificar el inicio de sesión
+
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    // Cargar el archivo JSON con datos de usuarios y recetas
     $data = json_decode(file_get_contents("datos.json"), true);
 
-    // Verificar si el usuario existe
     $user = null;
     foreach ($data["users"] as $userData) {
         if ($userData["username"] === $username) {
@@ -17,7 +15,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     if ($user && isset($user["password"]) && $user["password"] === $password) {
-        // Inicio de sesión exitoso
         session_start();
         $_SESSION["user_id"] = $user["id"];
         header("Location: index.php");
@@ -40,11 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </head>
 
 <body>
-    <header>
-        <nav>
-            <!-- Agrega enlaces de navegación aquí -->
-        </nav>
-    </header>
+    
     <main>
         <h1>Iniciar Sesión</h1>
         <div class="container">

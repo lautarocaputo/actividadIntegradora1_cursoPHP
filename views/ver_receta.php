@@ -1,5 +1,4 @@
 <?php
-        // Verifica si se ha pasado una receta válida a la vista
         if (isset($receta)) {
             ?>
             <div class="recipe-details">
@@ -24,7 +23,6 @@
             </div>
             <?php
         } else {
-            // Si no se pasa una receta válida, muestra un mensaje de error
             echo '<p class="error">No se encontró la receta solicitada.</p>';
         }
         ?>

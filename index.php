@@ -12,7 +12,11 @@
      ?>
     <main>
         <?php
-        // Aquí incluirás el contenido dinámico dependiendo de la acción en la URL
+        if (!isset($_SESSION['user_id'])) {
+            header("Location: login.php");
+            exit;
+        }
+
         if (isset($_GET['ruta'])) {
             $ruta = $_GET['ruta'];
             if ($ruta === 'recetas') {
@@ -32,14 +36,26 @@
                 }else{
                     $demo->procesar("");
                 }
-            } elseif ($ruta === 'perfil_usuario' && isset($_GET['user_id'])) {
-                // Incluye la vista para ver el perfil del usuario
-                include_once "views/perfil_usuario.php";
-            } else {
+            }elseif ($ruta === 'perfil_usuario') {
+                include_once "controllers/perfilUsuarioController.php";
+                $demo = new perfilUsuarioController();
+                if(isset($_GET['accion'])){
+                    $demo->procesar($_GET['accion']);
+                }else{
+                    $demo->procesar("");
+                }
+            } elseif ($ruta === 'cerrar_sesion') {
+                include_once "controllers/cerrarSesionController.php";
+                $demo = new cerrarSesionController();
+                if(isset($_GET['accion'])){
+                    $demo->procesar($_GET['accion']);
+                }else{
+                    $demo->procesar("");
+                }
+            }else {
                 include_once "views/404.php";
             }
         } else {
-            // Si no se proporciona una acción, muestra la página de inicio
             include_once "views/home.php";
         }
         ?>
