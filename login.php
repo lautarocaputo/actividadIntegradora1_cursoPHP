@@ -4,6 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
+
     $data = json_decode(file_get_contents("datos.json"), true);
 
     $user = null;
@@ -37,7 +38,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </head>
 
 <body>
-    
+    <header>
+        <nav>
+
+        </nav>
+    </header>
     <main>
         <h1>Iniciar Sesión</h1>
         <div class="container">
