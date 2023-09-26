@@ -1,0 +1,161 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "chef123",
+            "name": "Chef Juan",
+            "email": "chefjuan@example.com",
+            "password": "chef123"
+        },
+        {
+            "id": 2,
+            "username": "emma123",
+            "name": "Foodie Emma",
+            "email": "emma@example.com",
+            "password": "emma123"
+        }
+    ],
+    "recipes": [
+        {
+            "id": 1,
+            "title": "Pasta Carbonara",
+            "description": "Deliciosa pasta con salsa carbonara cremosa.",
+            "ingredients": [
+                "200g de pasta spaghetti",
+                "100g de panceta",
+                "2 yemas de huevo",
+                "50g de queso parmesano",
+                "Sal y pimienta al gusto"
+            ],
+            "instructions": [
+                "Cocina la pasta en agua con sal hasta que est\u00e9 al dente.",
+                "En una sart\u00e9n, cocina la panceta hasta que est\u00e9 crujiente.",
+                "En un taz\u00f3n, mezcla las yemas de huevo con el queso parmesano.",
+                "Escurre la pasta y m\u00e9zclala con la panceta.",
+                "A\u00f1ade la mezcla de huevo y queso, revolviendo constantemente.",
+                "Sazona con sal y pimienta al gusto.",
+                "Sirve caliente y disfruta."
+            ],
+            "author_id": 1,
+            "date_posted": "2023-09-15",
+            "likes": 25,
+            "imagen": "https:\/\/tiendasmartbrands.com\/cdn\/shop\/articles\/20220607201637-pastacarbonara_shot7_13.jpg?v=1654633160"
+        },
+        {
+            "id": 2,
+            "title": "Ensalada C\u00e9sar",
+            "description": "Una ensalada cl\u00e1sica con aderezo C\u00e9sar casero.",
+            "ingredients": [
+                "Lechuga romana",
+                "Croutones",
+                "Pechuga de pollo a la parrilla",
+                "Queso parmesano rallado",
+                "Salsa C\u00e9sar casera"
+            ],
+            "instructions": [
+                "Lava y corta la lechuga en trozos.",
+                "Cocina la pechuga de pollo y c\u00f3rtala en tiras.",
+                "A\u00f1ade los croutones y el queso parmesano a la lechuga.",
+                "Vierte la salsa C\u00e9sar por encima y mezcla bien.",
+                "A\u00f1ade las tiras de pollo a la ensalada.",
+                "Sirve y disfruta tu ensalada C\u00e9sar casera."
+            ],
+            "author_id": 2,
+            "date_posted": "2023-09-14",
+            "likes": 30,
+            "imagen": "https:\/\/www.gourmet.cl\/wp-content\/uploads\/2016\/09\/Ensalada_C%C3%A9sar-web-553x458.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Sopa de Tomate",
+            "description": "Sopa de tomate caliente y reconfortante.",
+            "ingredients": [
+                "1 kg de tomates maduros",
+                "1 cebolla",
+                "2 dientes de ajo",
+                "1 zanahoria",
+                "500 ml de caldo de pollo",
+                "Aceite de oliva, sal y pimienta al gusto"
+            ],
+            "instructions": [
+                "Pelar y picar los tomates, la cebolla, el ajo y la zanahoria.",
+                "En una cacerola grande, calentar el aceite de oliva y saltear la cebolla y el ajo hasta que est\u00e9n dorados.",
+                "Agregar los tomates y la zanahoria y cocinar a fuego medio durante 10 minutos.",
+                "A\u00f1adir el caldo de pollo y llevar a ebullici\u00f3n. Luego, reducir el fuego y cocinar a fuego lento durante 20 minutos.",
+                "Usar una licuadora de mano para hacer pur\u00e9 la sopa hasta que est\u00e9 suave.",
+                "Volver a calentar la sopa, sazonar con sal y pimienta al gusto y servir caliente."
+            ],
+            "author_id": 3,
+            "date_posted": "2023-09-17",
+            "likes": 15,
+            "imagen": "https:\/\/t1.uc.ltmcdn.com\/es\/posts\/3\/0\/9\/como_hacer_sopa_de_tomate_casera_25903_orig.jpg"
+        },
+        {
+            "id": "651257b02f1ac",
+            "title": "papas con cheddar",
+            "description": "papitas con quesito",
+            "ingredients": [
+                "papas",
+                "cheddar",
+                "bacon"
+            ],
+            "instructions": [
+                "pelar papas\r",
+                "fundir cheddar\r",
+                "cortar bacon"
+            ],
+            "imagen": "https:\/\/images.hola.com\/imagenes\/cocina\/recetas\/20220420208374\/patatas-frita-queso-cheddar\/1-77-159\/patatas-queso-adob-t.jpg"
+        },
+        {
+            "id": "651258a08ca3b",
+            "title": "Pollo al champignon",
+            "description": "Pollito con champignones",
+            "ingredients": [
+                "Pollo",
+                "Champignones",
+                "verdeo",
+                "crema"
+            ],
+            "instructions": [
+                "cocinar pollo,\r",
+                "cortar champignones,\r",
+                "hacer salsa"
+            ],
+            "imagen": "https:\/\/assets.unileversolutions.com\/recipes-v2\/210719.jpg"
+        },
+        {
+            "id": "65125936bf7f3",
+            "title": "Brownies",
+            "description": "Brownies de chocolate",
+            "ingredients": [
+                "Mezcla de brownies",
+                "chocolate",
+                "leche",
+                "azucar"
+            ],
+            "instructions": [
+                "hacer la mezcla\r",
+                "batir\r",
+                "llevar al horno"
+            ],
+            "imagen": "https:\/\/joyfoodsunshine.com\/wp-content\/uploads\/2019\/06\/fudgy-homemade-brownies-recipe-from-scratch-7.jpg"
+        },
+        {
+            "id": "65125aefbfa48",
+            "title": "pastel de papa",
+            "description": "pastel de papa casero",
+            "ingredients": [
+                "papa",
+                "carne",
+                "cebolla",
+                "aceituna"
+            ],
+            "instructions": [
+                "picar carne,\r",
+                "hacer pure,\r",
+                "mezclar cebolla"
+            ],
+            "imagen": "https:\/\/images.getrecipekit.com\/20220629164540-pastel-de-papas.jpg?aspect_ratio=4:3&quality=90&"
+        }
+    ]
+}

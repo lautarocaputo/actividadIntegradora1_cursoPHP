@@ -1,0 +1,184 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #ccc;
+}
+
+main {
+    padding: 20px;
+    min-height: calc(100vh - 170px);
+}
+
+#home{
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    display: block;
+}
+
+/* Estilos específicos para el formulario de inicio de sesión */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container{
+    padding: 20px;
+}
+
+form {
+    width: 300px;
+    background-color: #fff;
+    padding: 50px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    text-align: center; /* Center the content */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+.error {
+    color: #ff0000;
+    margin-top: 10px;
+}
+
+.home{
+    text-align: center;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.receta-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+
+.receta{
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 10px 20px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.receta-container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilos específicos para el formulario de agregar-receta-form */
+
+
+.agregar-receta-form form {
+    background-color: #fff;
+    width: 500px;
+}
+
+.agregar-receta-form label {
+    font-weight: bold;
+}
+
+.agregar-receta-form input[type="text"],
+.agregar-receta-form textarea,
+.agregar-receta-form input[type="url"] {
+    width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.agregar-receta-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.agregar-receta-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
